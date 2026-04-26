@@ -62,8 +62,12 @@ nav {
   z-index: 1000;
   background-color: var(--nav-bg);
   border-bottom: 2px solid var(--pink-light);
-  padding: 15px 0;
+  padding: 10px 40px;
   transition: background-color 0.3s ease;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
 }
 
 .logo-placeholder {
@@ -80,7 +84,9 @@ nav {
 
 .nav-brand-container {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
+  align-items: center;
+  gap: 10px; 
 }
 
 .nav-business-name {
@@ -120,6 +126,14 @@ nav {
   border-bottom: 2px solid var(--pink-dark);
 }
 
+.logo-img {
+    height: 70px;
+    width: auto;
+    object-fit: contain;
+   
+}
+
+
 /* Theme Toggle Button */
 #theme-toggle {
   background: none;
@@ -130,6 +144,7 @@ nav {
   cursor: pointer;
   font-size: 0.8rem;
   transition: all 0.3s ease;
+  white-space: nowrap;
 }
 
 #theme-toggle:hover {
